@@ -267,3 +267,16 @@ input[type="radio"] {
   /*background:#a83234;*/
   background-color: #333;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(12px);
+  transform: scale(1.1); 
+  z-index: -1;
+}
